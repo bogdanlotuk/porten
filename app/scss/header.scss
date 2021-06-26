@@ -1,9 +1,14 @@
 .header {
+    height: 100vh;
     &__inner {
         max-width: 1110px;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     &__fixed {
+        width: 100%;
         font-size: 12px;
         line-height: 16px;
         color: #969696;
@@ -13,22 +18,86 @@
         background: #000;
     }
     &__fixed-left {}
-    &__fixed-right {}
-    &__top {}
+    &__fixed-right {
+        color: inherit;
+        position: relative;
+        padding-left: 20px;
+    }
+    &__fixed-right::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-image: url(../img/login.svg);
+        left: 0;
+    }
+    &__top {
+        margin-top: 44px;
+        background-color: #0F0F0F;
+;
+    }
     &__top-logo {}
-    &__top-link {}
-    &__top-menu {}
+    &__top-link {
+        font-family: Post No Bills Jaffna;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 54px;
+    }
+    &__top-menu {
+        display: flex;
+    }
     &__menu {}
     &__menu-right {}
     &__cart {}
     &__cart-img {}
     &__search {}
     &__search-img {}
-    &__center {}
-    &__center-symbol {}
-    &__center-name {}
-    &__center-city {}
-    &__center-text {}
+    &__center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url('../img/header__bg.jpg') center no-repeat;
+        background-size: cover;
+    }
+    &__center-symbol {
+        width: 320px;
+        height: 320px;
+        border: 2px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 160px 0 80px;
+    }
+    &__center-name {
+        font-family: Post No Bills Jaffna;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 70px;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 0;
+    }
+    &__center-city {
+        font-family: PT Sans;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin: 8px 0 0 0;
+    }
+    &__center-text {
+        max-width: 750px;
+        font-family: PT Sans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 154px;
+    }
 }
 .container-fluid {
 }
@@ -38,13 +107,17 @@
 .list-time {
     display: flex;
     list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
 .list-time-item {
+    padding: 0 10px
 }
 .list-time-item:first-child {
-    padding-left: 20px;
+    padding-left: 25px;
     position: relative;
 }
+
 .list-time-item:first-child::before {
     content: "";
     position: absolute;
@@ -53,13 +126,24 @@
     background-image: url(../img/phone.svg);
     left: 0;
 }
+.list-time-item + .list-time-item {
+    border-left: 1px solid #969696;
+}
 .list-time-link {
     color: inherit;
 }
 .menu {
 }
 .list {
+    display: flex;
+    list-style-type: none;
     &__item {}
     &__item-link {
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
     }
 }

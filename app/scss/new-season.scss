@@ -1,0 +1,48 @@
+.new-season {
+    .container-fluid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__season {
+        width: 54%;
+    }
+    &__season-title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__slider {}
+    &__collection {
+        width: 46%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image:url(../img/new-season__bg.jpg);
+        background-size: cover;
+    }
+    &__collection-title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 484px 0 60px 0;
+    }
+    &__collection-link {
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 112px;
+    }
+}
