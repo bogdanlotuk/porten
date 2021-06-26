@@ -1,0 +1,65 @@
+.header {
+    &__inner {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+    &__fixed {
+        font-size: 12px;
+        line-height: 16px;
+        color: #969696;
+        position: fixed;
+        top: 0;
+        height: 44px;
+        background: #000;
+    }
+    &__fixed-left {}
+    &__fixed-right {}
+    &__top {}
+    &__top-logo {}
+    &__top-link {}
+    &__top-menu {}
+    &__menu {}
+    &__menu-right {}
+    &__cart {}
+    &__cart-img {}
+    &__search {}
+    &__search-img {}
+    &__center {}
+    &__center-symbol {}
+    &__center-name {}
+    &__center-city {}
+    &__center-text {}
+}
+.container-fluid {
+}
+.fixed-left {
+    &__time {}
+}
+.list-time {
+    display: flex;
+    list-style-type: none;
+}
+.list-time-item {
+}
+.list-time-item:first-child {
+    padding-left: 20px;
+    position: relative;
+}
+.list-time-item:first-child::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/phone.svg);
+    left: 0;
+}
+.list-time-link {
+    color: inherit;
+}
+.menu {
+}
+.list {
+    &__item {}
+    &__item-link {
+    }
+}
