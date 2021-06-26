@@ -16,12 +16,12 @@
                     <div class="header__inner">
                         <div class="header__fixed-left fixed-left">
                             <ul class="fixed-left__time list-time">
-                                <li class="list-time-item"><a href="" class="list-time-link">8(812)123-45-67</a></li>
+                                <li class="list-time-item"><a class="list-time-link" href="">8(812)123-45-67</a></li>
                                 <li class="list-time-item">Работаем 7 дней в неделю</li>
-                                <li class="list-time-item">9:00-18.00</li>
+                                <li class="list-time-item">9:00 - 18.00</li>
                             </ul>
                         </div>
-                        <a class="header__fixed-right">Войти / Регистрация</a>
+                        <a class="header__fixed-right" href="#">Войти / Регистрация</a>
                     </div>
                 </div>
                 <div class="header__top row">
@@ -72,27 +72,27 @@
                     </div>
                 </div>
             </section>
+
             <section class="collection">
                 <div class="container-fluid">
-                    <div class="collection__inner">
-                        <div class="collection__void"></div>
-                        <div class="collection__last">
-                            <div class="collection__last-general">
-                                <h3 class="collection__last-general-title">коллекция 2018</h3>
-                                <p class="collection__last-general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. 
-                                    Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis 
-                                    gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit 
-                                    quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque 
-                                    volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. 
-                                    Id aliquam a aliquam egestas leo orci pharetra sed diam.
-                                </p>
-                                <a class="collection__last-general-link">посмотреть коллекцию</a>
-                            </div>
+                    <div class="collection__void"></div>
+                    <div class="collection__last">
+                        <div class="collection__last-general">
+                            <h3 class="collection__last-general-title">коллекция 2018</h3>
+                            <p class="collection__last-general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. 
+                                Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis 
+                                gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit 
+                                quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque 
+                                volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. 
+                                Id aliquam a aliquam egestas leo orci pharetra sed diam.
+                            </p>
+                            <a class="collection__last-general-link">посмотреть коллекцию</a>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="new-clocks">
                 <div class="container-fluid">
                     <div class="new-clocks__inner">
@@ -101,20 +101,22 @@
                     </div>
                 </div>
             </section>
-            <section class="brends">
+
+            <section class="brands">
                 <div class="container-fluid">
-                    <div class="brends__inner">
-                        <h3 class="brends__title">новые поступления</h3>
-                        <div class="brends__slider"></div>
+                    <div class="brands__inner">
+                        <h3 class="brands__title">наши бренды</h3>
+                        <div class="brands__slider"></div>
                     </div>
                 </div>
             </section>
         </main>
+
         <footer class="footer">
             <div class="container-fluid">
-                <div class="footer__inner">
-                    <div class="footer__top">
-                        <div class="footer__shop">
+                <div class="footer__top">
+                    <div class="footer__top-inner row">
+                        <div class="footer__shop col-lg-4">
                             <h4 class="footer__shop-title">о магазине</h4>
                             <p class="footer__shop-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet 
@@ -123,24 +125,30 @@
                                 massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.
                             </p>
                         </div>
-                        <div class="footer__categories">
+                        <div class="footer__categories col-lg-4">
                             <h4 class="footer__categories-title">категории</h4>
-                            <a class="footer__categories-link">часы</a>
-                            <a class="footer__categories-link">браслеты</a>
-                            <a class="footer__categories-link">ремни</a>
-                            <a class="footer__categories-link">ювелирные изделия</a>
-                            <a class="footer__categories-link">запонки</a>s
+                            <div class="footer__categories-inner">
+                                <a class="footer__categories-link" href="#">часы</a>
+                                <a class="footer__categories-link" href="#">браслеты</a>
+                                <a class="footer__categories-link" href="#">ремни</a>
+                                <a class="footer__categories-link" href="#">ювелирные изделия</a>
+                                <a class="footer__categories-link" href="#">запонки</a>
+                            </div>
                         </div>
-                        <div class="footer__mailing">
+                        <div class="footer__mailing col-lg-4">
                             <h4 class="footer__mailing-title">рассылка</h4>
                             <p class="footer__mailing-text">Lorem ipsum dolor sit amet, consectetur adipiscing 
                                 elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.
                             </p>
-                            <input class="footer__mailing-input" type="text" placeholder="Ваша почта">
-                            <button class="footer__mailing-button">подписаться</button>
+                            <div class="footer__mailing-bottom">
+                                <input class="footer__mailing-input" type="text" placeholder="Ваша почта">
+                                <button class="footer__mailing-button">подписаться</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer__bottom">
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-inner">
                         <p class="footer__all-rights">© 2020 Все права защищены</p>
                         <a class="footer__made-by" href="#">Сделано Figma.info</a>
                     </div>

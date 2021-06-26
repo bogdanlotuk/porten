@@ -1,5 +1,4 @@
 .header {
-    height: 100vh;
     &__inner {
         max-width: 1110px;
         margin: 0 auto;
@@ -16,12 +15,18 @@
         top: 0;
         height: 44px;
         background: #000;
+        z-index: 10;
     }
     &__fixed-left {}
     &__fixed-right {
         color: inherit;
         position: relative;
         padding-left: 20px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    &__fixed-right:hover {
+        color: #fff;
     }
     &__fixed-right::before {
         position: absolute;
@@ -36,7 +41,9 @@
         background-color: #0F0F0F;
 ;
     }
-    &__top-logo {}
+    &__top-logo {
+        padding: 13px 0;
+    }
     &__top-link {
         font-family: Post No Bills Jaffna;
         text-transform: uppercase;
@@ -45,12 +52,23 @@
         font-size: 36px;
         line-height: 54px;
     }
+    &__top-link:hover {
+        color: #fff;
+    }
     &__top-menu {
         display: flex;
+        height: 100%;
     }
-    &__menu {}
-    &__menu-right {}
-    &__cart {}
+    &__menu {
+    }
+    &__menu-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__cart {
+        margin-right: 40px;
+    }
     &__cart-img {}
     &__search {}
     &__search-img {}
@@ -58,7 +76,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: url('../img/header__bg.jpg') center no-repeat;
+        justify-content: flex-start;
+        background: url('../img/header__bg.jpg') no-repeat;
         background-size: cover;
     }
     &__center-symbol {
@@ -132,18 +151,36 @@
 .list-time-link {
     color: inherit;
 }
+.list-time-link:hover {
+    color: #fff;
+}
 .menu {
 }
 .list {
     display: flex;
     list-style-type: none;
-    &__item {}
+    margin: 0 40px 0 0;
+    padding: 0;
+    height: 100%;
+    &__item {
+        height: 100%;
+    }
     &__item-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-family: PT Sans;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 18px;
         text-transform: uppercase;
+        color: #969696;
+        padding: 0 20px;
+        height: 100%;
+    }
+    &__item-link:hover {
+        color: #fff;
+        background-color: #1F1F1F;
     }
 }
