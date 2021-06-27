@@ -1,4 +1,5 @@
 .brands {
+    background-color: #0F0F0F;
     &__inner {
         max-width: 1110px;
         margin: 0 auto;
@@ -6,7 +7,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 60px 0 250px 0;
+        padding: 60px 0 72px 0;
     }
     &__title {
         font-family: 'Playfair Display';
@@ -17,6 +18,7 @@
         text-align: center;
         text-transform: uppercase;
         position: relative;
+        margin-bottom: 80px;
     }
     &__title::after {
         position: absolute;
@@ -24,9 +26,30 @@
         width: 120px;
         height: 1px;
         background-color: #fff;
-        bottom: -26px;
+        bottom: -40px;
         left: 50%;
         transform: translateX(-50%);
     }
     &__slider {}
+    .swiper-container {
+        max-width: 1110px;
+    }
+    .swiper-brands {
+    }
+    .swiper-wrapper {
+    }
+    .swiper-slide {
+            &__link {}
+            &__inner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__img {}
+    }
+    .card {
+        background-color: inherit;
+        border: none;
+    }
+    
 }

@@ -6,10 +6,14 @@
         padding: 0;
     }
     &__season {
-        width: 54%;
+        width: 54.6%;
+        min-width: 920px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
+        align-self: stretch;
+        padding: 93px 0 80px 0;
     }
     &__season-title {
         font-family: 'Playfair Display';
@@ -20,7 +24,7 @@
         text-align: center;
         text-transform: uppercase;
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 90px;
     }
     &__season-title::after {
         position: absolute;
@@ -28,19 +32,20 @@
         width: 120px;
         height: 1px;
         background-color: #fff;
-        bottom: -26px;
+        bottom: -42px;
         left: 50%;
         transform: translateX(-50%);
     }
     &__slider {
     }
     &__collection {
-        width: 46%;
+        width: 45.4%;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-image:url(../img/new-season__bg.jpg);
         background-size: cover;
+        align-self: stretch;
     }
     &__collection-title {
         font-family: 'Playfair Display';
@@ -50,7 +55,7 @@
         line-height: 48px;
         text-align: center;
         text-transform: uppercase;
-        margin: 484px 0 60px 0;
+        margin: 484px 0 49px 0;
         position: relative;
     }
     &__collection-title::after {
@@ -59,7 +64,7 @@
         width: 120px;
         height: 1px;
         background-color: #fff;
-        bottom: -26px;
+        bottom: -20px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -72,15 +77,16 @@
         letter-spacing: 2px;
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: 112px;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid #fff;
         padding: 12px 26px;
+        margin-bottom: 84px;
     }
     &__collection-link:hover {
         color: #fff;
+        background-color: #ffffff22;
     }
 
     .swiper-container {
@@ -93,6 +99,9 @@
             padding: 55px 22px;
             background-color: #191B1C;
             margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         &__top-img {
             
@@ -107,6 +116,7 @@
             font-size: 18px;
             line-height: 24px;
             color: #FFFFFF;
+            margin-bottom: 10px;
         }
         &__bottom-price {
             font-family: Playfair Display;
