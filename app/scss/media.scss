@@ -65,6 +65,12 @@
 
 @media (max-width: 991.98px) {
     .new-season {
+        &__collection-title {
+            margin: 384px 0 49px 0;
+        }
+        &__collection-link {
+            margin-bottom: 184px;
+        }
         .swiper-container {
             max-width: 740px;
         }
@@ -136,10 +142,11 @@
             height: 100vh;
             z-index: 15;
             background-color: #000;
+            overflow: auto; //scroll
         } 
         .menu--active {
             width: 100%;
-            height: 100%;
+            height: 70%;
         }
         .menu-list--active {
             width: 100%;
@@ -147,7 +154,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 30px;
+            gap: 10%;
             .menu-list__item {
                 margin-left: 0;
                 width: 100%; 
@@ -160,10 +167,26 @@
                 z-index: 10;
                 width: 100%;
                 text-align: center;
+                color: #fff;
             }
         }
-        // ################
-    }   
+        .menu-right--active {
+            width: 100%;
+            height: 30%;
+            .header__cart-img {
+                transform: scale(2);
+            }
+            .header__search-img {
+                transform: scale(2);
+            }
+            .header__cart {
+                margin-right: 20%;
+            }
+        }
+    }
+    .body--active{
+        overflow: hidden;
+    }
     .new-season {
         .swiper-container {
             max-width: 540px;
@@ -186,18 +209,71 @@
 }
 
 @media (max-width: 575.98px) { 
+    .header {
+        &__center-symbol {
+            width: 290px;
+            height: 290px;
+        }
+        &__center-text {
+            width: 80%;
+            margin-bottom: 60px;
+        }
+        .menu-list--active {
+            .menu-list__item-link {
+                font-size: 30px;
+            }
+        }
+    }
+
     .new-season {
+        &__season {
+            padding: 70px 0 70px;
+        }
         .swiper-container {
             max-width: 310px;
         }
+        &__collection-title {
+            width: 80%;
+        }
+        .swiper-slide {
+            &__bottom-name {
+                text-align: center;
+            }
+            &__bottom-price {
+                text-align: center;
+            }
+        }
     } 
+    .collection {
+        &__last-general {
+            max-width: 80%;
+        }
+    }
     .new-clocks {
+        &__inner {
+            padding: 70px 0 70px;
+        }
         .swiper-watches-first {
             max-width: 310px;
-            
+            .swiper-slide {
+                &__bottom-name {
+                    text-align: center;
+                }
+                &__bottom-price {
+                    text-align: center;
+                }
+            }
         }
         .swiper-watches-second {
             max-width: 310px;
+            .swiper-slide {
+                &__bottom-name {
+                    text-align: center;
+                }
+                &__bottom-price {
+                    text-align: center;
+                }
+            }
         }
     }
     .brands {
@@ -205,9 +281,10 @@
             max-width: 310px;
         }
     }
+
+    .footer {
+        &__top-inner {
+            padding: 50px 0 50px;
+        }
+    }
 }
-
-
-
-
-

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>PORTEN</title>
 </head>
-<body>
+<body id="body">
     <div class="wrapper">
         <header class="header">
             <div class="container-fluid">
@@ -39,14 +39,14 @@
                         <div class="header__navigation" id="navigation">
                             <nav class="header__menu menu" id="menu">
                                 <ul class="menu-list" id="menu-list">
-                                    <li class="menu-list__item"><a class="menu-list__item-link" href="#">понравилось</a></li>
-                                    <li class="menu-list__item"><a class="menu-list__item-link" href="#">личный кабинет</a></li>
-                                    <li class="menu-list__item"><a class="menu-list__item-link" href="#">настройки</a></li>
+                                    <li class="menu-list__item"><a class="menu-list__item-link" href="#" id="like">понравилось</a></li>
+                                    <li class="menu-list__item"><a class="menu-list__item-link" href="#" id="admin">личный кабинет</a></li>
+                                    <li class="menu-list__item"><a class="menu-list__item-link" href="#" id="settings">настройки</a></li>
                                 </ul>
                             </nav>
-                            <div class="header__menu-right">
-                                <a class="header__cart" href="#"><img class="header__cart-img" src="img/cart.svg" alt="cart"></a>
-                                <a class="header__search" href="#"><img class="header__search-img" src="img/search.svg" alt="search"></a>
+                            <div class="header__menu-right" id="menu-right">
+                                <a class="header__cart" href="#"><img class="header__cart-img" id="cart" src="img/cart.svg" alt="cart"></a>
+                                <a class="header__search" href="#"><img class="header__search-img" id="search" src="img/search.svg" alt="search"></a>
                             </div>
                         </div>
                     </div>
