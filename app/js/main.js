@@ -1,3 +1,21 @@
+document.getElementById('burger').onclick = function() {
+  this.classList.toggle('burger--active');
+  document.getElementById('navigation').classList.toggle('header__navigation--active');
+  document.getElementById('menu').classList.toggle('menu--active');
+  document.getElementById('menu-list').classList.toggle('menu-list--active');
+
+  let link = document.getElementsByClassName('menu-list__item-link')
+  for (let elem of link) {
+    elem.classList.toggle('menu-list__item-link--active');
+  }
+}
+
+
+
+
+
+
+
 let mySwiper1 = new Swiper ('.swiper-container.swiper-new-season', {
   loop: true,
   breakpoints: {

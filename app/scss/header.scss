@@ -54,7 +54,7 @@
     &__top-link:hover {
         color: #fff;
     }
-    &__top-menu {
+    &__navigation {
         display: flex;
         height: 100%;
     }
@@ -155,7 +155,7 @@
 }
 .menu {
 }
-.list {
+.menu-list {
     display: flex;
     list-style-type: none;
     margin: 0 40px 0 0;

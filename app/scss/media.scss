@@ -120,9 +120,49 @@
             top: 0;
             z-index: 10;
         }
-        &__top-menu {
+        &__navigation {
             display: none;
         }
+        .burger {
+            display: block;
+        }
+        // #################
+        &__navigation--active {
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100vh;
+            z-index: 15;
+            background-color: #000;
+        } 
+        .menu--active {
+            width: 100%;
+            height: 100%;
+        }
+        .menu-list--active {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            .menu-list__item {
+                margin-left: 0;
+                width: 100%; 
+                height: 40px;               
+            }
+            .menu-list__item-link {
+                display: inline-block;
+                font-size: 36px;
+                line-height: 40px;
+                z-index: 10;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        // ################
     }   
     .new-season {
         .swiper-container {
