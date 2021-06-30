@@ -14,6 +14,8 @@ document.getElementById('burger').onclick = function() {
 let like = document.getElementById('like');
 let admin = document.getElementById('admin');
 let settings = document.getElementById('settings');
+let card = document.getElementById('card');
+let search = document.getElementById('search');
 
 
 let arrLink = [like, admin, settings, cart, search];
@@ -34,46 +36,6 @@ for (i = 0; i < arrLink.length; i++){
   }
 }
 
-
-
-
-// document.getElementById('like').onclick = function() {
-//   document.getElementById('burger').classList.remove('burger--active');
-//   document.getElementById('navigation').classList.remove('header__navigation--active');
-//   document.getElementById('menu').classList.remove('menu--active');
-//   document.getElementById('menu-list').classList.remove('menu-list--active');
-
-//   let link = document.getElementsByClassName('menu-list__item-link')
-//   for (let elem of link) {
-//     elem.classList.remove('menu-list__item-link--active');
-//   }
-// }
-
-// document.getElementById('admin').onclick = function() {
-//   document.getElementById('burger').classList.remove('burger--active');
-//   document.getElementById('navigation').classList.remove('header__navigation--active');
-//   document.getElementById('menu').classList.remove('menu--active');
-//   document.getElementById('menu-list').classList.remove('menu-list--active');
-
-//   let link = document.getElementsByClassName('menu-list__item-link')
-//   for (let elem of link) {
-//     elem.classList.remove('menu-list__item-link--active');
-//   }
-// }
-
-// document.getElementById('settings').onclick = function() {
-//   document.getElementById('burger').classList.remove('burger--active');
-//   document.getElementById('navigation').classList.remove('header__navigation--active');
-//   document.getElementById('menu').classList.remove('menu--active');
-//   document.getElementById('menu-list').classList.remove('menu-list--active');
-
-//   let link = document.getElementsByClassName('menu-list__item-link')
-//   for (let elem of link) {
-//     elem.classList.remove('menu-list__item-link--active');
-//   }
-// }
-
-// ##########################################################################################
 let mySwiper1 = new Swiper ('.swiper-container.swiper-new-season', {
   loop: true,
   breakpoints: {
