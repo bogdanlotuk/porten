@@ -17,7 +17,6 @@
         background: #000;
         z-index: 10;
     }
-    &__fixed-left {}
     &__fixed-right {
         color: inherit;
         position: relative;
@@ -58,8 +57,6 @@
         display: flex;
         height: 100%;
     }
-    &__menu {
-    }
     &__menu-right {
         display: flex;
         justify-content: center;
@@ -68,9 +65,6 @@
     &__cart {
         margin-right: 40px;
     }
-    &__cart-img {}
-    &__search {}
-    &__search-img {}
     &__center {
         display: flex;
         flex-direction: column;
@@ -117,8 +111,6 @@
         margin-bottom: 154px;
     }
 }
-.container-fluid {
-}
 .fixed-left {
     &__time {}
 }
@@ -152,8 +144,6 @@
 }
 .list-time-link:hover {
     color: #fff;
-}
-.menu {
 }
 .menu-list {
     display: flex;

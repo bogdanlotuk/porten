@@ -36,8 +36,6 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    &__slider {
-    }
     &__collection {
         width: 45.4%;
         display: flex;
@@ -92,8 +90,6 @@
     .swiper-container {
         max-width: 880px;
     }
-    .swiper-wrapper {
-    }
     .swiper-slide {
         &__top {
             padding: 55px 22px;
@@ -102,12 +98,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        &__top-img {
-            
-        }
-        &__bottom {
-            
         }
         &__bottom-name {
             font-family: Playfair Display;

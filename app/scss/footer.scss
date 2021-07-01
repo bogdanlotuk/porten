@@ -11,7 +11,6 @@
         margin: 0 auto;
         padding: 82px 0 83px;
     }
-    &__shop {}
     &__shop-title {
         font-family: Playfair Display;
         font-style: normal;
@@ -27,9 +26,6 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
-    }
-    &__categories {
-        
     }
     &__categories-title {
         font-family: Playfair Display;
@@ -60,9 +56,6 @@
     }
     &__categories-link:hover {
         color: inherit;
-    }
-    &__mailing {
-        
     }
     &__mailing-title {
         font-family: Playfair Display;
@@ -111,7 +104,6 @@
         background-color: #000;
         border: none;
     }
-    &__bottom {}
     &__bottom-inner{
         max-width: 1110px;
         margin: 0 auto;

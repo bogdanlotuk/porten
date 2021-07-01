@@ -34,22 +34,15 @@
     .swiper-container {
         max-width: 1110px;
     }
-    .swiper-brands {
-    }
-    .swiper-wrapper {
-    }
     .swiper-slide {
-            &__link {}
             &__inner {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-            &__img {}
     }
     .card {
         background-color: inherit;
         border: none;
     }
-    
 }
