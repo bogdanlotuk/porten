@@ -41,8 +41,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image:url(../img/new-season__bg.jpg);
-        background-size: cover;
+        background: center / cover no-repeat url(../img/new-season__bg.jpg);
+        // background-size: cover;
         align-self: stretch;
     }
     &__collection-title {

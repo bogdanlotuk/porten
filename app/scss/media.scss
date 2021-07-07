@@ -55,16 +55,33 @@
         .swiper-container {
             max-width: 740px;
         }
+        
     }
     .collection {
+        .container-fluid {
+            flex-direction: column-reverse;
+        }
         &__void {
-            display: none;
+            width: 100%;
+        }
+        &__void-img {
+            width: 100%;
+        }
+        &__last-general {
+            max-width: 100%;
+        }
+        &__last-general-text {
+            width: 100%;
         }
         &__last {
-            width: 100%;
-            background-image:url(../img/collection__bg.jpg);
-            background-size: cover;
+            width: 90%;
+            // width: 800px;
         }
+        // &__last {
+        //     width: 100%;
+        //     background-image:url(../img/collection__bg.jpg);
+        //     background-size: cover;
+        // }
     }
     .new-clocks {
         .swiper-watches-first {
@@ -86,9 +103,17 @@
         &__shop, &__categories {
             margin-bottom: 30px;
         }
-        &__shop-title, &__categories-title,
+        &__categories-inner {
+            justify-content: center;
+        }
+        &__shop-title, 
+        &__categories-title,
         &__mailing-title {
             margin-bottom: 20px;
+            text-align: center;
+        }
+        &__shop-text, &__mailing-text {
+            text-align: center;
         }
     }
 }
@@ -165,6 +190,12 @@
         overflow: hidden;
     }
     .new-season {
+        &__collection-title {
+            margin-top: 200px;
+        }
+        &__collection-link {
+            margin-bottom: 150px;
+        }
         .swiper-container {
             max-width: 540px;
         }
@@ -208,7 +239,11 @@
             max-width: 310px;
         }
         &__collection-title {
+            margin-top: 150px;
             width: 80%;
+        }
+        &__collection-link {
+            margin-bottom: 100px;
         }
         .swiper-slide {
             &__bottom-name {
@@ -220,6 +255,9 @@
         }
     } 
     .collection {
+        // &__last {
+        //     width: 100%;
+        // }
         &__last-general {
             max-width: 80%;
         }

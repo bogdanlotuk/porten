@@ -70,8 +70,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        background: url('../img/header__bg.jpg') no-repeat;
-        background-size: cover;
+        background: center / cover no-repeat url('../img/header__bg.jpg');
+        // background: url('../img/header__bg.jpg') no-repeat center cover;
+        // background-size: cover;
     }
     &__center-symbol {
         width: 320px;

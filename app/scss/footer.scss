@@ -3,8 +3,7 @@
         padding: 0;
     }
     &__top {
-        background: url('../img/footer__bg.jpg') no-repeat;
-        background-size: cover;
+        background: center / cover no-repeat url('../img/footer__bg.jpg');
     }
     &__top-inner {
         max-width: 1110px;
