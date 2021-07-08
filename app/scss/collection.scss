@@ -7,9 +7,6 @@
     }
     &__void {
         width: 46.2%;
-        // align-self: stretch;
-        // background: center / cover no-repeat url(../img/collection__bg.jpg);
-
     }
     &__void-img {
         max-width: 100%;
@@ -52,7 +49,7 @@
         transform: translateX(-50%);
     }
     &__last-general-text {
-        font-family: PT Sans;
+        font-family: 'PT Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -61,7 +58,7 @@
         margin-bottom: 65px;
     }
     &__last-general-link {
-        font-family: PT Sans;
+        font-family: 'PT Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
